@@ -75,8 +75,8 @@ class AzureDevopsTool < MCP::Tool
       # when "get_current_user" then AzureDevops::ProjectClient.get_current_user
       
       # Work Items (calls WorkItemClient)
-      when "list_work_items" then AzureDevops::WorkItemClient.list_work_items(project, query, count)
-      when "get_work_item" then AzureDevops::WorkItemClient.get_work_item(work_item_id)
+      # when "list_work_items" then AzureDevops::WorkItemClient.list_work_items(project, query, count)
+      # when "get_work_item" then AzureDevops::WorkItemClient.get_work_item(work_item_id)
       when "create_work_item" then AzureDevops::WorkItemClient.create_work_item(project, work_item_type, title, description, assigned_to, sprint)
       when "update_work_item" then AzureDevops::WorkItemClient.update_work_item(work_item_id, title, description, state, assigned_to, sprint)
       when "delete_work_item" then AzureDevops::WorkItemClient.delete_work_item(work_item_id)
