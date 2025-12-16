@@ -1,7 +1,6 @@
 ### MCP Server
     For Bananacoding
 
-
 ## Add Azure Devops buildin in claude_desktop_config.json
 ```
 {
@@ -20,9 +19,4 @@
     }
   }
 }
-```
-
-## Add .env your token
-```
-ADO_MCP_AUTH_TOKEN=your_token
 ```
